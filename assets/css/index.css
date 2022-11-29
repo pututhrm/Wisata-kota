@@ -1,0 +1,134 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+/* variable */
+:root {
+  --font-base: "Poppins", sans-serif;
+  --font-color-dark: #333333;
+  --c-linier-rgb: 0, 0, 0;
+  --transition: all 0.5s ease;
+  --c-brand: #81a076;
+  --c-brand-light: #a0bd96;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: 1.7;
+  color: var(--font-color-dark);
+  min-height: 2000px;
+}
+
+.section-padding {
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
+}
+
+#beranda {
+  background: linear-gradient(rgba(var(--c-linier-rgb), 0.66), rgba(var(--c-linier-rgb), 0)), url(../img/beranda-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#beranda h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1vh;
+  line-height: 4.7vh;
+}
+
+#beranda h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7.2vh;
+  line-height: 8vh;
+}
+
+#beranda form {
+  padding: 0.5em;
+}
+
+#beranda .search-box {
+  border-radius: 10px;
+}
+
+/* Button */
+
+.btn-brand {
+  background-color: var(--c-brand);
+  border-color: var(--c-brand);
+  color: white;
+}
+
+.btn-brand:hover {
+  background-color: var(--c-brand-light);
+  border-color: var(--c-brand-light);
+  color: white;
+}
+
+.btn-srch {
+  width: 100%;
+  max-width: 180px;
+}
+
+#beranda .form-control {
+  width: 100%;
+}
+
+/* Wisata Favorit */
+
+.a-link {
+  color: var(--c-brand);
+}
+
+.a-link:hover {
+  color: var(--c-brand-light);
+}
+
+.image-zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom-warpper {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-zoom-warpper img {
+  transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-warpper img {
+  transform: scale(1.1);
+}
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-brand);
+  font-size: 34px;
+  flex: none;
+}
+
+#wisata-favorit .iconbox {
+  background-color: var(--c-brand);
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transition: var(--transition);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#wisata-favorit .col:hover .iconbox {
+  opacity: 1;
+  top: 40%;
+}
