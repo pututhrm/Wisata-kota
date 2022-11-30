@@ -16,9 +16,8 @@
 
 body {
   font-family: var(--font-base);
-  line-height: 1.7;
   color: var(--font-color-dark);
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 .section-padding {
@@ -32,20 +31,6 @@ body {
   background-size: cover;
 }
 
-#beranda h6 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3.1vh;
-  line-height: 4.7vh;
-}
-
-#beranda h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 7.2vh;
-  line-height: 8vh;
-}
-
 #beranda form {
   padding: 0.5em;
 }
@@ -53,6 +38,32 @@ body {
 #beranda .search-box {
   border-radius: 10px;
 }
+
+/* text */
+
+/* h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1vh;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7.2vh;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4vh;
+}
+
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.26vh;
+} */
 
 /* Button */
 
@@ -131,4 +142,27 @@ body {
 #wisata-favorit .col:hover .iconbox {
   opacity: 1;
   top: 40%;
+}
+
+#jenis-wisata {
+  background-color: var(--c-brand-light);
+}
+
+#jenis-wisata .jns-wisata {
+  /* background-color: var(--c-brand); */
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  transition: var(--transition);
+  opacity: 0;
+  left: 50px;
+}
+
+#jenis-wisata .col:hover .jns-wisata {
+  opacity: 1;
+  bottom: 5%;
+}
+
+#jenis-wisata .container .col {
+  border: 0px;
 }
