@@ -145,7 +145,7 @@ p {
 }
 
 #jenis-wisata {
-  background-color: var(--c-brand-light);
+  background-color: #F7F7F7;
 }
 
 #jenis-wisata .jns-wisata {
@@ -166,3 +166,12 @@ p {
 #jenis-wisata .container .col {
   border: 0px;
 }
+
+/* bantu desamu */
+
+#bantu-desamu {
+  background: linear-gradient(rgba(var(--c-linier-rgb), 0.66), rgba(var(--c-linier-rgb), 0)), url(../img/bg-02.png);
+  background-size: cover;
+ 
+}
+
